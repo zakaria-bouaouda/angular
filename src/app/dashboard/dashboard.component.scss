@@ -1,0 +1,1110 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&display=swap');
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Public Sans', sans-serif;
+}
+
+
+body{
+   width: 100%;
+   height: 80vh;
+   display: grid;
+   place-items: center;
+   background: rgb(248, 248, 248);
+   max-height: 100vh;
+   
+
+   & .container{
+      width: 99%;
+      height: 99%;
+      border-radius: 1.5vh;
+      background-color: white;
+      box-shadow: 0 0 0.5vw 0 rgb(184, 184, 184);
+      background-color: white;
+
+      & nav{
+     
+         width: 98%;
+         font-family: sans-serif;
+         display: flex;
+         margin-bottom: 1%;
+         margin-top: 2%;
+         height: 1.5%;
+         align-items: center;
+         margin-left: 1%;
+         justify-content: space-between;
+
+
+      & .navLeft{
+         width: 40%;
+         margin-left: 1.5vw;
+
+         & ul{
+            display: flex;
+            list-style: none;
+            width: 100%;
+            justify-content: space-between;
+            
+            & li{
+               color: rgb(0, 0, 107);
+               font-size: 1.3vw;
+               font-weight: 500;
+               height: 2.3vw;
+               cursor: pointer;
+               transition: 0.2s;
+        
+            }
+
+            & li:hover{
+               color: rgb(40, 40, 131);
+               transform: translateY(-0.2vw);
+            }
+
+            & .highlight{
+               border-bottom: 0.35vw solid darkblue;
+
+            }
+         }
+
+      }
+
+      & .parD{
+         height:100%;
+    
+         display: grid;
+         place-items: center;
+         position: relative;
+         top: -0.6vw;
+         margin-right: 1.6vw;
+
+         & .par{
+         font-weight: 500;
+         font-size: 1.2vw;
+         color: rgb(0, 0, 59);
+         text-decoration: underline;
+         cursor: pointer;
+
+      }
+      & .par:hover{
+         color: blue;
+      }
+
+      }
+      }
+
+      & .bodyPart{
+         width: 100%;
+         height: 180vh;
+         padding-top: 1vw;
+         padding-left: 1%;
+         display: flex;
+         justify-content: space-between;
+         
+         & .bodyLeft{
+            width: 20%;
+            height: 100%;
+            display: grid;
+            place-items: center;
+            margin-top: 1vw;
+            margin-left: 1%;
+
+
+         
+            & .leftContainer{
+         
+               width: 100%;
+               height: 100%; 
+              
+
+               & .dvs{
+                  height: 6.5vw;
+                  width: 100%;
+                  border-top: 0.1vw solid rgb(245, 245, 245)
+                  ;
+                  // background-color: lightblue;
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+
+
+                  & .pt1{
+                     display: flex;
+                     width: fit-content;
+
+                     justify-content: space-between;
+                     align-items: center;
+
+                     & img.tick{
+                        width: 18%;
+                        height: 18%;
+                        margin-right: 1vw;
+                        max-width: 1.1vw;
+                        max-height: 1.2vw;
+                  }
+
+                  & h3{
+                     font-weight: 500;
+                     color: rgb(46, 46, 105);
+                     font-size: 1.1vw;
+                  }
+                  }
+
+
+
+
+                  & img.mail{
+                     width: 7%;
+                     position: relative;
+                     float: right;
+                  }
+               }
+               
+            }
+             & .message{
+      
+
+                  position: relative;
+            
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: space-between;
+                  height: 14vw;
+                  margin-top: 4vw;
+
+                  & button{
+                     height: 3.2vw;
+                     border-radius: 2vw;
+                     border: none;
+                     outline: none;
+                     background-color: rgb(236, 34, 78);
+                     color: white;
+                     font-size: 1.1vw;
+                     font-weight: 500;
+                     cursor: pointer;
+                     transition: 0.2s;
+                  }
+
+                  & button:active{
+                     transform: scale(.9,.9);
+                  }
+
+                  & h2{
+                     font-size:1.8vw;
+                     font-weight: 500;
+                     color: rgb(1, 1, 61);
+                  }
+
+                  & p{
+                     font-size: 1.1vw;
+                     line-height: 1.4vw;
+                     margin-bottom: 1vw;
+                     margin-top: 1vw;
+                     color: rgb(43, 43, 43);
+                  }
+               }
+         }
+
+         & .bodyRight{
+            width: 75%;
+         
+            height: 70vh;
+            padding: 1vw;
+            padding-left: 1.5vw;
+            
+
+            & h3.topic{
+               font-size: 1.5vw;
+               font-weight: 400;
+               color: rgb(1, 1, 61);
+               margin-bottom: 2vw;
+            }
+         
+            & .secondRaw{
+               display: flex;
+               align-items: center;
+               justify-content: space-between;
+               margin-right: 1.6vw;
+               margin-bottom: 1.2vw;
+               
+            & .buttons{
+               width: 40vw;
+               
+               height: 3vw;
+               display: flex;
+               justify-content: space-between;
+
+              
+
+            .btns{
+               display: flex;
+               width: 7.5vw;
+               justify-content: space-between;
+               align-items: center;
+               
+
+
+               & h4{
+                  color: rgb(13, 13, 65);
+                  font-size: 1.2vw;
+                  font-weight: 500;
+                
+               }
+
+                button{
+                     width: 3.4vw;
+                     height: 1.8vw;
+                     background-color: rgb(7, 0, 75);
+                     border: none;
+                     outline: none;
+                     border-radius: 1vw;
+                     display: flex;
+                     align-items: center;
+
+                     & div{
+                        width: 1.6vw;
+                        height: 1.6vw;
+                        background-color: white;
+                        clip-path: circle();
+                        position: relative;
+                        left: 1.67vw;
+                     }
+               }
+               
+               & .off{
+                  width: 3.4vw;
+                  height: 1.8vw;
+                  background-color: rgb(204, 204, 204);
+                  border: none;
+                  outline: none;
+                  border-radius: 1vw;
+                  display: flex;
+                  align-items: center;
+
+                  & div{
+                     width: 1.6vw;
+                     height: 1.6vw;
+                     background-color: white;
+                     clip-path: circle();
+                     position: relative;
+                     left: 0.1vw;
+                     }
+               }
+            }
+            }
+               & h3{
+                  font-weight: 500;
+                  color: rgb(0, 0, 82);
+                  font-size: 1.2vw;
+                  text-decoration: underline;
+                  text-decoration-color: rgb(0, 0, 82);
+                  cursor: pointer;
+               }
+               & h3:hover{
+                  font-weight: 600;
+               }
+            
+            }
+
+            & .box{
+               width: 98%;
+               height: fit-content;
+               padding-bottom: 20%;
+               background-color: rgb(255, 255, 255);
+               border-radius: 1.5vw;
+               box-shadow: 0 0 1vw 0 rgb(201, 201, 201);
+               padding-top: 0.25vw;
+               padding-left: 1.7vw;
+            
+
+               & nav{
+                  width: 95%;
+                  height: 3vw;
+                  display: flex;
+                  justify-content: space-between;
+               
+                  & .boxNavLeft{
+                     width: 40%;
+
+                     & ul{
+                        display: flex;
+
+                        & li{
+                           display: flex;
+                           cursor: pointer;
+                           height: 100%;
+                           color: rgb(16, 16, 104);
+                           
+                           & h3{
+                              font-size: 1.8vw;
+                              font-weight: 500;
+
+                           }
+                           
+                           & img{
+                              width: 8%;
+                              height: 8%;
+                           }
+
+                           & .wr{
+                              width: 12%;
+                              height: 12%;
+                              position: relative;
+                           }
+
+                           // & .mail{
+                           //    border-bottom: 0.3vw solid rgb(0, 0, 100);
+                           // }
+                              $tps:0;
+
+                           @if $tps{
+                              & .tps1{
+                              border-bottom: 0.3vw solid rgb(0, 0, 100);
+                              padding-top: 0.3vw;
+                           }
+                           }
+                        }
+
+                     }
+                  }
+               }
+
+               & .rightTxt{
+                  width: 96%;
+                  text-align: right;
+                  color: rgb(0, 0, 107);
+                  text-decoration: underline;
+                  text-decoration-color: rgb(0, 0, 107);
+               }
+
+               & .grayTxt{
+                  color: gray;
+                  font-size: 0.9vw;
+                  font-weight: 400;
+                  position: relative;
+                  top: 1.5vw;
+                  margin-bottom: 4vw;
+               }
+
+               & p{
+                  line-height: 1.4vw;
+                  color: rgb(0, 0, 100);
+                  margin-left: 1vw;
+                  font-size: 1.1vw;
+               }
+            }
+         }
+
+      }
+   }
+}
+
+
+ .btns{
+               display: flex;
+               width: 7.5vw;
+               justify-content: space-between;
+               align-items: center;
+
+
+               & h4{
+                  color: rgb(13, 13, 65);
+               }
+
+                button{
+                     width: 3.4vw;
+                     height: 1.8vw;
+                     background-color: rgb(7, 0, 75);
+                     border: none;
+                     outline: none;
+                     border-radius: 1vw;
+                     display: flex;
+                     align-items: center;
+
+                     & div{
+                        width: 1.6vw;
+                        height: 1.6vw;
+                        background-color: white;
+                        clip-path: circle();
+                        position: relative;
+                        left: 1.67vw;
+                     }
+               }
+               
+               & .off{
+                  width: 3.4vw;
+                  height: 1.8vw;
+                  background-color: rgb(204, 204, 204);
+                  border: none;
+                  outline: none;
+                  border-radius: 1vw;
+                  display: flex;
+                  align-items: center;
+
+                  & div{
+                     width: 1.6vw;
+                     height: 1.6vw;
+                     background-color: white;
+                     clip-path: circle();
+                     position: relative;
+                     left: 0.1vw;
+                     }
+               }
+            }
+
+            
+
+
+@media all and (max-width:800px){
+   
+   body{
+
+      & .container{
+         
+         & nav{
+           
+
+            & .navLeft{
+
+               & ul{
+
+                  & li{
+                     font-size: 1.8vw;
+                  }
+               }
+            }
+
+            & .parD{
+
+               & .par{
+                  font-size: 1.5vw;
+                  
+               }
+            }
+         }
+
+         & .leftContainer{
+            
+            & .dvs{
+               
+               & .pt1{
+                  
+                  & .txt{
+                     font-size: 1.3vw !important;
+                  }
+               }
+            }
+
+            & .message{
+               height: 25vw;
+           
+               position: relative;
+               & h2{
+                  font-size:2vw !important;
+               }
+               & p{
+                  font-size: 1.25vw !important;
+                  margin-top: 1vw !important;
+                  font-weight: 500 !important;
+                  color: rgb(70, 70, 70);
+
+               }
+
+               & button{
+                  height: 4vw !important;
+               }
+            }
+         }
+
+         & .box{
+               padding-bottom: 10% !important;
+            & nav{
+               
+               & .boxNavLeft{
+
+                  & h3{
+                     font-size:2vw !important;
+                  }
+
+                  & img{
+                     width: 12% !important;
+                  }
+                  & .wr{
+                     width: 20% !important;
+                  }
+               }
+            }
+
+
+            & p{
+               font-size: 1.3vw !important;
+               line-height: 2vw !important;
+            }
+
+
+         }
+      }
+   }
+
+   
+}
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Public Sans', sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 80vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  background: #f8f8f8;
+  max-height: 100vh;
+}
+
+body .container {
+  width: 99%;
+  height: 99%;
+  border-radius: 1.5vh;
+  background-color: white;
+  -webkit-box-shadow: 0 0 0.5vw 0 #b8b8b8;
+          box-shadow: 0 0 0.5vw 0 #b8b8b8;
+  background-color: white;
+}
+
+body .container nav {
+  width: 98%;
+  font-family: sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1%;
+  margin-top: 2%;
+  height: 1.5%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 1%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .container nav .navLeft {
+  width: 40%;
+  margin-left: 1.5vw;
+}
+
+body .container nav .navLeft ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .container nav .navLeft ul li {
+  color: #00006b;
+  font-size: 1.3vw;
+  font-weight: 500;
+  height: 2.3vw;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+body .container nav .navLeft ul li:hover {
+  color: #282883;
+  -webkit-transform: translateY(-0.2vw);
+          transform: translateY(-0.2vw);
+}
+
+body .container nav .navLeft ul .highlight {
+  border-bottom: 0.35vw solid darkblue;
+}
+
+body .container nav .parD {
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  position: relative;
+  top: -0.6vw;
+  margin-right: 1.6vw;
+}
+
+body .container nav .parD .par {
+  font-weight: 500;
+  font-size: 1.2vw;
+  color: #00003b;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+body .container nav .parD .par:hover {
+  color: blue;
+}
+
+body .container .bodyPart {
+  width: 100%;
+  height: 180vh;
+  padding-top: 1vw;
+  padding-left: 1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .container .bodyPart .bodyLeft {
+  width: 20%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  margin-top: 1vw;
+  margin-left: 1%;
+}
+
+body .container .bodyPart .bodyLeft .leftContainer {
+  width: 100%;
+  height: 100%;
+}
+
+body .container .bodyPart .bodyLeft .leftContainer .dvs {
+  height: 6.5vw;
+  width: 100%;
+  border-top: 0.1vw solid whitesmoke;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .container .bodyPart .bodyLeft .leftContainer .dvs .pt1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container .bodyPart .bodyLeft .leftContainer .dvs .pt1 img.tick {
+  width: 18%;
+  height: 18%;
+  margin-right: 1vw;
+  max-width: 1.1vw;
+  max-height: 1.2vw;
+}
+
+body .container .bodyPart .bodyLeft .leftContainer .dvs .pt1 h3 {
+  font-weight: 500;
+  color: #2e2e69;
+  font-size: 1.1vw;
+}
+
+body .container .bodyPart .bodyLeft .leftContainer .dvs img.mail {
+  width: 7%;
+  position: relative;
+  float: right;
+}
+
+body .container .bodyPart .bodyLeft .message {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 14vw;
+  margin-top: 4vw;
+}
+
+body .container .bodyPart .bodyLeft .message button {
+  height: 3.2vw;
+  border-radius: 2vw;
+  border: none;
+  outline: none;
+  background-color: #ec224e;
+  color: white;
+  font-size: 1.1vw;
+  font-weight: 500;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+body .container .bodyPart .bodyLeft .message button:active {
+  -webkit-transform: scale(0.9, 0.9);
+          transform: scale(0.9, 0.9);
+}
+
+body .container .bodyPart .bodyLeft .message h2 {
+  font-size: 1.8vw;
+  font-weight: 500;
+  color: #01013d;
+}
+
+body .container .bodyPart .bodyLeft .message p {
+  font-size: 1.1vw;
+  line-height: 1.4vw;
+  margin-bottom: 1vw;
+  margin-top: 1vw;
+  color: #2b2b2b;
+}
+
+body .container .bodyPart .bodyRight {
+  width: 75%;
+  height: 70vh;
+  padding: 1vw;
+  padding-left: 1.5vw;
+}
+
+body .container .bodyPart .bodyRight h3.topic {
+  font-size: 1.5vw;
+  font-weight: 400;
+  color: #01013d;
+  margin-bottom: 2vw;
+}
+
+body .container .bodyPart .bodyRight .secondRaw {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-right: 1.6vw;
+  margin-bottom: 1.2vw;
+}
+
+body .container .bodyPart .bodyRight .secondRaw .buttons {
+  width: 40vw;
+  height: 3vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .container .bodyPart .bodyRight .secondRaw .buttons .btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 7.5vw;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container .bodyPart .bodyRight .secondRaw .buttons .btns h4 {
+  color: #0d0d41;
+  font-size: 1.2vw;
+  font-weight: 500;
+}
+
+body .container .bodyPart .bodyRight .secondRaw .buttons .btns button {
+  width: 3.4vw;
+  height: 1.8vw;
+  background-color: #07004b;
+  border: none;
+  outline: none;
+  border-radius: 1vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container .bodyPart .bodyRight .secondRaw .buttons .btns button div {
+  width: 1.6vw;
+  height: 1.6vw;
+  background-color: white;
+  -webkit-clip-path: circle();
+          clip-path: circle();
+  position: relative;
+  left: 1.67vw;
+}
+
+body .container .bodyPart .bodyRight .secondRaw .buttons .btns .off {
+  width: 3.4vw;
+  height: 1.8vw;
+  background-color: #cccccc;
+  border: none;
+  outline: none;
+  border-radius: 1vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container .bodyPart .bodyRight .secondRaw .buttons .btns .off div {
+  width: 1.6vw;
+  height: 1.6vw;
+  background-color: white;
+  -webkit-clip-path: circle();
+          clip-path: circle();
+  position: relative;
+  left: 0.1vw;
+}
+
+body .container .bodyPart .bodyRight .secondRaw h3 {
+  font-weight: 500;
+  color: #000052;
+  font-size: 1.2vw;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #000052;
+          text-decoration-color: #000052;
+  cursor: pointer;
+}
+
+body .container .bodyPart .bodyRight .secondRaw h3:hover {
+  font-weight: 600;
+}
+
+body .container .bodyPart .bodyRight .box {
+  width: 98%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-bottom: 20%;
+  background-color: white;
+  border-radius: 1.5vw;
+  -webkit-box-shadow: 0 0 1vw 0 #c9c9c9;
+          box-shadow: 0 0 1vw 0 #c9c9c9;
+  padding-top: 0.25vw;
+  padding-left: 1.7vw;
+}
+
+body .container .bodyPart .bodyRight .box nav {
+  width: 95%;
+  height: 3vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .container .bodyPart .bodyRight .box nav .boxNavLeft {
+  width: 40%;
+}
+
+body .container .bodyPart .bodyRight .box nav .boxNavLeft ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .container .bodyPart .bodyRight .box nav .boxNavLeft ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  height: 100%;
+  color: #101068;
+}
+
+body .container .bodyPart .bodyRight .box nav .boxNavLeft ul li h3 {
+  font-size: 1.8vw;
+  font-weight: 500;
+}
+
+body .container .bodyPart .bodyRight .box nav .boxNavLeft ul li img {
+  width: 8%;
+  height: 8%;
+}
+
+body .container .bodyPart .bodyRight .box nav .boxNavLeft ul li .wr {
+  width: 12%;
+  height: 12%;
+  position: relative;
+}
+
+body .container .bodyPart .bodyRight .box nav .boxNavLeft ul li .tps1 {
+  border-bottom: 0.3vw solid #000064;
+  padding-top: 0.3vw;
+}
+
+body .container .bodyPart .bodyRight .box .rightTxt {
+  width: 96%;
+  text-align: right;
+  color: #00006b;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #00006b;
+          text-decoration-color: #00006b;
+}
+
+body .container .bodyPart .bodyRight .box .grayTxt {
+  color: gray;
+  font-size: 0.9vw;
+  font-weight: 400;
+  position: relative;
+  top: 1.5vw;
+  margin-bottom: 4vw;
+}
+
+body .container .bodyPart .bodyRight .box p {
+  line-height: 1.4vw;
+  color: #000064;
+  margin-left: 1vw;
+  font-size: 1.1vw;
+}
+
+.btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 7.5vw;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btns h4 {
+  color: #0d0d41;
+}
+
+.btns button {
+  width: 3.4vw;
+  height: 1.8vw;
+  background-color: #07004b;
+  border: none;
+  outline: none;
+  border-radius: 1vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btns button div {
+  width: 1.6vw;
+  height: 1.6vw;
+  background-color: white;
+  -webkit-clip-path: circle();
+          clip-path: circle();
+  position: relative;
+  left: 1.67vw;
+}
+
+.btns .off {
+  width: 3.4vw;
+  height: 1.8vw;
+  background-color: #cccccc;
+  border: none;
+  outline: none;
+  border-radius: 1vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btns .off div {
+  width: 1.6vw;
+  height: 1.6vw;
+  background-color: white;
+  -webkit-clip-path: circle();
+          clip-path: circle();
+  position: relative;
+  left: 0.1vw;
+}
+
+@media all and (max-width: 800px) {
+  body .container nav .navLeft ul li {
+    font-size: 1.8vw;
+  }
+  body .container nav .parD .par {
+    font-size: 1.5vw;
+  }
+  body .container .leftContainer .dvs .pt1 .txt {
+    font-size: 1.3vw !important;
+  }
+  body .container .leftContainer .message {
+    height: 25vw;
+    position: relative;
+  }
+  body .container .leftContainer .message h2 {
+    font-size: 2vw !important;
+  }
+  body .container .leftContainer .message p {
+    font-size: 1.25vw !important;
+    margin-top: 1vw !important;
+    font-weight: 500 !important;
+    color: #464646;
+  }
+  body .container .leftContainer .message button {
+    height: 4vw !important;
+  }
+  body .container .box {
+    padding-bottom: 10% !important;
+  }
+  body .container .box nav .boxNavLeft h3 {
+    font-size: 2vw !important;
+  }
+  body .container .box nav .boxNavLeft img {
+    width: 12% !important;
+  }
+  body .container .box nav .boxNavLeft .wr {
+    width: 20% !important;
+  }
+  body .container .box p {
+    font-size: 1.3vw !important;
+    line-height: 2vw !important;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

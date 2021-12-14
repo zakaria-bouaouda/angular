@@ -1,0 +1,337 @@
+
+<body>
+
+   <div class="container">
+
+
+      <nav>
+
+         <div class="navLeft">
+            <ul>
+               <li class="highlight">Voyageur</li>
+               <li>Coéquipier</li>
+               <li>Igloohome</li>
+               <li>Swikly</li>
+            </ul>
+         </div>
+
+         <div class="parD">
+            <h2 class="par">
+               Paramètres
+            </h2>
+         </div>
+
+      </nav>
+
+
+      <div class="bodyPart">
+
+         <div class="bodyLeft">
+
+          
+
+            <section class="leftContainer">
+
+               <div class="tabOne dvs" style="border: none;">
+
+                  <div class="pt1">
+                     <!-- <img [src]="./tick.png" [alt]="tick.png"class="tick"> -->
+                     <img src="assets/static/tick.png"class="tick">
+                     <h3 class="txt">Immédiat</h3>
+
+                  </div>
+
+                  <!-- <img ng-src="{{./static/mail}}"  class="mail"/> -->
+
+               </div>
+
+               <div class="tabTwo  dvs">
+
+                  <div class="pt1">
+                     <!-- <img src="../static/tick.png" alt="" class="tick"> -->
+                     <img [src]="cheminImage" class="tick">
+                     <h3 class="txt">30 J avant l'arrivée </h3>
+
+                  </div>
+
+                  <img src="assets/static/phone.png" alt="" class="mail">
+                  <img src="assets/static/mail.png" alt="" class="mail">
+
+
+               </div>
+
+               <div class="tabthree dvs">
+                  <div class="pt1">
+                     <img src="assets/static/tick.png" alt="" class="tick">
+
+                     <h3 class="txt">7 J avant l'arrivée</h3>
+
+                  </div>
+                  <img src="assets/static/mail.png" alt="" class="mail">
+
+
+               </div>
+
+               <div class="tabFour dvs">
+                  <div class="pt1">
+                     <img src="assets/static/tick.png" alt="" class="tick">
+
+                     <h3 class="txt">1 J avant l'arrivée</h3>
+
+                  </div>
+
+                  <img src="assets/static/mail.png" alt="" class="mail">
+
+               </div>
+
+               <div class="tabFive dvs">
+                  <div class="pt1">
+                     <img src="assets/static/tick.png" alt="" class="tick">
+
+                     <h3 class="txt">1 J après l'arrivée</h3>
+
+                  </div>
+
+                  <img src="assets/static/mail.png" alt="" class="mail">
+
+
+               </div>
+
+               <div class="tabSix dvs">
+                  <div class="pt1">
+                     <img src="assets/static/wr.png" alt="" class="tick">
+
+                     <h3 class="txt">1 J avant le départ</h3>
+
+                  </div>
+
+
+
+               </div>
+
+               <div class="tabSeven dvs">
+                  <div class="pt1">
+                     <img src="assets/static/wr.png" alt="" class="tick">
+
+                     <h3 class="txt">1 J après le départ</h3>
+
+                  </div>
+
+
+
+               </div>
+
+               <div class="message">
+
+                  <h2>
+                     Mes messages personnalisés
+                  </h2>
+                  <p>
+                     Vous voulez programmer un message qui n'est pas dans cette liste? Ex: 4J avant l'arrivée
+                  </p>
+
+
+                  <button class="personalize">Personnaliser l'envoi</button>
+
+               </div>
+
+
+            </section>
+
+
+         </div>
+
+         <div class="bodyRight">
+
+            <h3 class="topic">La réservation provient de :</h3>
+
+            <div class="secondRaw">
+
+               <div class="buttons">
+                  <style>
+                     .switch {
+                        position: relative;
+                        display: inline-block;
+                        width: 3.3vw;
+                        height: 1.8vw;
+                     }
+
+
+                     .switch input {
+                        opacity: 0;
+                        width: 0;
+                        height: 0;
+                     }
+
+
+                     .slider {
+                        position: absolute;
+                        cursor: pointer;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        background-color: #ccc;
+                        -webkit-transition: .4s;
+                        transition: .4s;
+                     }
+
+                     .slider:before {
+                        position: absolute;
+                        content: "";
+                        height: 1.5vw;
+                        width: 1.5vw;
+                        left: 0.1vw;
+                        bottom: 0.15vw;
+                        background-color: white;
+                        -webkit-transition: .4s;
+                        transition: .4s;
+                     }
+
+                     input:checked+.slider {
+                        background-color: #001d35;
+                     }
+
+                     input:focus+.slider {
+                        box-shadow: 0 0 1px #2196F3;
+                     }
+
+                     input:checked+.slider:before {
+                        -webkit-transform: translateX(26px);
+                        -ms-transform: translateX(26px);
+                        transform: translateX(26px);
+                     }
+
+
+                     .slider.round {
+                        border-radius: 3vw;
+                     }
+
+                     .slider.round:before {
+                        border-radius: 50%;
+                     }
+                  </style>
+
+                  <div class="arbnb btns">
+                     <h4 class="air">Airbnb</h4>
+
+                     <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                     </label>
+
+
+                  </div>
+
+                  <div class="arbnb btns" style="width: 8vw;">
+                     <h4 class="air">Booking</h4>
+                     <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                     </label>
+
+                  </div>
+
+                  <div class="arbnb btns" style="width: 7vw;">
+                     <h4 class="air">VRBO</h4>
+                     <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                     </label>
+
+                  </div>
+
+                  <div class="arbnb btns" style="width: 7vw;">
+                     <h4 class="air">Direct</h4>
+                     <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                     </label>
+
+                  </div>
+
+
+
+               </div>
+
+               <h3 class="secondRawLink">
+                  Configurer un autre message
+               </h3>
+
+            </div>
+
+            <div class="box">
+
+               <nav>
+
+                  <div class="boxNavLeft">
+                     <ul>
+                        <li>
+                           <h3 class="tps1">Mail</h3>
+                           <img src="assets/static/tick.png" alt="" class="tick">
+                        </li>
+
+
+                        <li style="position: relative; left: -1.8vw;">
+                           <h3 class="tps2">SMS</h3>
+                           <img src="assets/static/wr.png" alt="" class="wr">
+                        </li>
+
+                        <li>
+                           <h3 class="tps3">
+                              WhatsApp
+                           </h3>
+                           <img src="assets/static/wr.png" alt="" class="wr">
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="btns" style="position: relative;margin: 0;padding: 0;left: 4vw;">
+
+                     <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                     </label>
+                  </div>
+
+
+               </nav>
+
+               <h3 class="rightTxt" style="font-size: 1.2vw;">Modifier le message</h3>
+
+               <h4 class="grayTxt"><i>Ce message ira directement dans la messagerie de votre plateforme de réservation en ligne</i></h4>
+
+               <p style="margin-bottom: 1.5vw;">
+                Merci d'avoir réservé mon logement !
+               </p>
+
+               <p style="margin-bottom: 1.5vw;">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti fugiat asperiores exercitationem
+                  recusandae explicabo laboriosam eius possimus consequuntur voluptas officiis modi itaque expedita non
+                  molestias animi quam, enim illo, id temporibus accusantium. Ex deserunt eos expedita harum, odio
+                  nesciunt aspernatur
+               </p>
+
+               <p style="margin-bottom: 1.5vw;">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto odio, culpa debitis numquam harum
+                  aut praesentium placeat adipisci repellendus consequuntur. 
+               </p>
+
+               <p style="margin-bottom: 1.5vw;">
+                  Lorem ipsum dolor sit amet.
+               </p>
+
+               <p style="margin-bottom: 1.5vw;">
+                  Lorem ipsum dolor sit amet. 
+               </p>
+
+            </div>
+
+         </div>
+
+      </div>
+
+
+   </div>
+
+</body>
+
